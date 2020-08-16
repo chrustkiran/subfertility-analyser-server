@@ -32,4 +32,9 @@ public class SymptomController {
     public HashMap<String, ArrayList<String>> getMedSubClass() {
         return medicalHistory.getMedicalSubclasses();
     }
+
+    @GetMapping("/get-all-med-history")
+    public ArrayList<String> getMedAllMedHistories() {
+        return medicalHistory.getAllMedHistories();
+    }
 }

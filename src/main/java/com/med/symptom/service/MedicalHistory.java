@@ -7,4 +7,5 @@ public interface MedicalHistory {
     ArrayList<String> getAllMedicalHistories();
     ArrayList<String> getIndividualofMedHistory();
     HashMap<String, ArrayList<String>> getMedicalSubclasses();
+    ArrayList<String> getAllMedHistories();
 }

@@ -54,4 +54,25 @@ public class MedicalHistoryImpl extends SymptomService implements MedicalHistory
         }
         return medHistoryFieldMap;
     }
+
+    @Override
+    public ArrayList<String> getAllMedHistories() {
+        ArrayList<String> allMedHistories = new ArrayList<>();
+        for (String res: this.getAllMedicalHistories()) {
+            if (!res.equals(INDIVIDUAL_ASSESSMENT)) {
+                owlReader.getAllSubclasses(res).forEach(s -> {
+                    ArrayList list = owlReader.getAllSubclasses(s);
+                    if (!list.isEmpty()) {
+                        allMedHistories.addAll(list);
+                    } else {
+                        allMedHistories.addAll(owlReader.getAllIndividualByType(s));
+                    }
+
+                });
+            }
+        }
+        return allMedHistories;
+    }
+
+
 }

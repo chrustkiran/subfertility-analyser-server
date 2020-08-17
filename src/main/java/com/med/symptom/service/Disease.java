@@ -11,5 +11,5 @@ public interface Disease {
     String FINDS = "finds";
     String FIND_BY = "findby";
     ArrayList<String> getAllOvulatoryDisorder();
-    HashMap<String, HashSet<DiseaseDTO>> getDiseaseTestMap();
+    HashMap<String, HashSet<DiseaseDTO>> getDiseaseTestMap(HashMap<String, String> infoBody);
 }

@@ -3,9 +3,7 @@ package com.med.symptom.controller;
 import com.med.symptom.model.DiseaseDTO;
 import com.med.symptom.service.Disease;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,9 +20,11 @@ public class DiseaseController {
         return disease.getAllOvulatoryDisorder();
     }
 
-    @GetMapping("/get-dis-test")
-    public HashMap<String, HashSet<DiseaseDTO>> getDiseaseTest() {
-        return disease.getDiseaseTestMap();
+    @PostMapping("/get-dis-test")
+    public HashMap<String, HashSet<DiseaseDTO>> getDiseaseTest(
+            @RequestBody HashMap<String, String> infoBody
+    ) {
+        return disease.getDiseaseTestMap(infoBody);
     }
 
 }

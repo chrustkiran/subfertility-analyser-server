@@ -1,0 +1,1851 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.subfertility.com/ontologies/2020/4/subfertility.owl"
+     xml:base="http://www.subfertility.com/ontologies/2020/4/subfertility.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl">
+        <rdfs:comment>A  female subfertility ontology that descibe decision making in subfertility of female.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#AfterThat -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#AfterThat">
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#BeforeThat"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GeneralExamination"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SpecificExamination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#BeforeThat -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#BeforeThat">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SpecificExamination"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GeneralExamination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Examineafter -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Examineafter">
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Examinebefore"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SpecificExamination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Examinebefore -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Examinebefore">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SpecificExamination"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IsHighReading -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IsHighReading">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasHighReading"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PrematureOverianFailure"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SerumFSH"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IsHighResultof -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IsHighResultof">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasHighResult"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SerumAndrogen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IsLowResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IsLowResult">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasLowResult"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#LH"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IsPositiveFinding -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IsPositiveFinding">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasPositiveFinding"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingStudyTransvaginalAndTransdominalUSS"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby">
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Causes"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Diagnosis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Diagnosis"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Causes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasBasicTreat -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasBasicTreat">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTreat"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isBasicTreat"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Group1"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasHighReading -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasHighReading">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SerumFSH"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PrematureOverianFailure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasHighResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasHighResult">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SerumAndrogen"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasHighResults -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasHighResults">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isHighResults"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#FastingBloodSugarorHBA1c"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasHighTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasHighTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isHighFor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Prolactin"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasLowResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasLowResult">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#LH"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasLowResults -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasLowResults">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isLowResults"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SerumFSH"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasLowTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasLowTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isLowin"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Cortisol"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasLowsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasLowsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isLowsIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TSH"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasNeuroTreat -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasNeuroTreat">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTreat"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isNeuroTreat"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#NeurologyReferral"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasObstruction -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasObstruction">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isObstruction"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Laperoscopy"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalDisorder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasObstructions -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasObstructions">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isObstructions"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#DieTest"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalDisorder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasOverBMITreat -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasOverBMITreat">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTreat"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isOverBMITreat"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Group2"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasPositiveFinding -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasPositiveFinding">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingStudyTransvaginalAndTransdominalUSS"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasResultHigh -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasResultHigh">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isResultHigh"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#LH"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasResultOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasResultOf">
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isResultOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Outcome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasShow -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasShow">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isShow"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#DiagnosticLaperoscopy"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Endometriosis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasShows -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasShows">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isShows"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingStudyTransvaginal"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Endometriosis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasStimulateTreat -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasStimulateTreat">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTreat"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isStimulateTreat"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvarianStimulation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasSurgeries -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasSurgeries">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTreat"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalDisorder"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalSurgery"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasSurgery -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasSurgery">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTreat"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isSurgery"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Endometriosis"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#LaperoscopicAdhesionolysis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTheraphy -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTheraphy">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTreat"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTheraphy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GnRHpulseTheraphy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTreat -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTreat">
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTreatFor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Causes"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTreatment">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTreat"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTreatmentFor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PrematureOverianFailure"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IVFTreatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTumor -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTumor">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTumor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingContrastCTscanofBrain"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTumors -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasTumors">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#finds"/>
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTumors"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingMRIScan"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasselect -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasselect">
+        <owl:inverseOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isselect"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MedicalHistory"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Causes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isBasicTreat -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isBasicTreat">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTreatFor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Group1"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isHighFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isHighFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Prolactin"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isHighResults -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isHighResults">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#FastingBloodSugarorHBA1c"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isLowResults -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isLowResults">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SerumFSH"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isLowin -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isLowin">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Cortisol"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isLowsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isLowsIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TSH"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isNeuroTreat -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isNeuroTreat">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTreatFor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#NeurologyReferral"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isObstruction -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isObstruction">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalDisorder"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Laperoscopy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isObstructions -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isObstructions">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalDisorder"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#DieTest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isOverBMITreat -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isOverBMITreat">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTreatFor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Group2"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isResultHigh -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isResultHigh">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#LH"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isResultOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isResultOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Outcome"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isShow -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isShow">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Endometriosis"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#DiagnosticLaperoscopy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isShows -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isShows">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Endometriosis"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingStudyTransvaginal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isStimulateTreat -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isStimulateTreat">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTreatFor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvarianStimulation"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isSurgery -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isSurgery">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTreatFor"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#LaperoscopicAdhesionolysis"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Endometriosis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTheraphy -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTheraphy">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTreatFor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GnRHpulseTheraphy"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTreatFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTreatFor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Causes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTreatmentFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTreatmentFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTreatFor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IVFTreatment"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PrematureOverianFailure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTumor -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTumor">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingContrastCTscanofBrain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTumors -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isTumors">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#findby"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingMRIScan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isirregular -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isirregular">
+        <rdfs:subPropertyOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasselect"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MensuralHistory"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvulatoryDisorder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isselect -->
+
+    <owl:ObjectProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isselect">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Causes"/>
+        <rdfs:range rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MedicalHistory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#AnyPreviousPregnancies -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#AnyPreviousPregnancies">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SymptomAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Causes -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Causes">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#isselect"/>
+                <owl:someValuesFrom rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MedicalHistory"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#FemaleSubfertility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#CervicalScreening -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#CervicalScreening">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GeneralGynaecologicalHistory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Cortisol -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Cortisol">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Diagnosis -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#FemaleSubfertility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#DiagnosticLaperoscopy -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#DiagnosticLaperoscopy">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#DieTest -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#DieTest">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#DifferentialDiagnosisExclusion -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#DifferentialDiagnosisExclusion">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HistoryOfPresentComplaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#DonorInsemmination -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#DonorInsemmination">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Endometriosis -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Endometriosis">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#UterineProblems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#FamilyHistory -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#FamilyHistory">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GeneralGynaecologicalHistory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#FastingBloodSugarorHBA1c -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#FastingBloodSugarorHBA1c">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#FemaleSubfertility -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#FemaleSubfertility"/>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Fibroids -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Fibroids">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#UterineProblems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GeneralExamination -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GeneralExamination">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GeneralGynaecologicalHistory -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GeneralGynaecologicalHistory">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SymptomAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GnRHpulseTheraphy -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GnRHpulseTheraphy">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Group1 -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Group1">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Group2 -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Group2">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HistoryOfPresentComplaint -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HistoryOfPresentComplaint">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MedicalHistory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvulatoryDisorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ICSITreatment -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ICSITreatment">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IVFTreatment -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IVFTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingContrastCTscanofBrain -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingContrastCTscanofBrain">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingMRIScan -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingMRIScan">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingStudyTransvaginal -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingStudyTransvaginal">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingStudyTransvaginalAndTransdominalUSS -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ImagingStudyTransvaginalAndTransdominalUSS">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Infertility -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Infertility">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Outcome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IntrauterineInsemmination -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IntrauterineInsemmination">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IntroductionAssessment -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IntroductionAssessment">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MedicalHistory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ItracytoplasmicSpermInjection -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ItracytoplasmicSpermInjection">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#LH -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#LH">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#LaperoscopicAdhesionolysis -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#LaperoscopicAdhesionolysis">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Laperoscopy -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Laperoscopy">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MedicalHistory -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MedicalHistory">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#hasselect"/>
+                <owl:someValuesFrom rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Causes"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#FemaleSubfertility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MedicationAndAllergies -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MedicationAndAllergies">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SymptomAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MensuralHistory -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MensuralHistory">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GeneralGynaecologicalHistory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#NeurologyReferral -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#NeurologyReferral">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Non_Obstructive_azoospermia -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Non_Obstructive_azoospermia">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ItracytoplasmicSpermInjection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Obstructive_azoospermia -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Obstructive_azoospermia">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ItracytoplasmicSpermInjection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OocyteDonation -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OocyteDonation">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OtherGynaecologicalSymptoms -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OtherGynaecologicalSymptoms">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GeneralGynaecologicalHistory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Others -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Others">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Outcome -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Outcome">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#FemaleSubfertility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvarianStimulation -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvarianStimulation">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OverBMIPersonLoseWeight -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OverBMIPersonLoseWeight">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Group2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OverBMIPersonTreatment -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OverBMIPersonTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Group2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvulatoryDisorder -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvulatoryDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvulatoryDisorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pregnancy -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pregnancy">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Outcome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PrematureOverianFailure -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PrematureOverianFailure">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvulatoryDisorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PresentingComplaint -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PresentingComplaint">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MedicalHistory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PreviousFertilityTreatment -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PreviousFertilityTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SymptomAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PreviousHistoryofPelvicInflammatoryDisease -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PreviousHistoryofPelvicInflammatoryDisease">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SymptomAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PreviousMedicalAndSurgicalHistory -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PreviousMedicalAndSurgicalHistory">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SymptomAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Primary -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Primary">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#AnyPreviousPregnancies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Prolactin -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Prolactin">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#RiskBehaviors -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#RiskBehaviors">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HistoryOfPresentComplaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Secondary -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Secondary">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#AnyPreviousPregnancies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SerumAndrogen -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SerumAndrogen">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SerumFSH -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SerumFSH">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Severe_Deficts_in_Semen_Quality -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Severe_Deficts_in_Semen_Quality">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ItracytoplasmicSpermInjection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SexualAndContraceptiveHistory -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SexualAndContraceptiveHistory">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GeneralGynaecologicalHistory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SpecificExamination -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SpecificExamination">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SymptomAnalysis -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SymptomAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HistoryOfPresentComplaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TSH -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TSH">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Investigations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Timing_of_sex_for_pregnancy -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Timing_of_sex_for_pregnancy">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SymptomAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#FemaleSubfertility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalDisorder -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalSurgery -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalSurgery">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#UterineProblems -->
+
+    <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#UterineProblems">
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Causes"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#AdjuvantGrowthHormone -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#AdjuvantGrowthHormone">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OverBMIPersonTreatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#AdviceHuman -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#AdviceHuman">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Group1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Age -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Age">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IntroductionAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Alcohol -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Alcohol">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#RiskBehaviors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Amount_of_Blood_Loss -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Amount_of_Blood_Loss">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MensuralHistory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#BMI -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#BMI">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SpecificExamination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ClomifeneCitrate -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ClomifeneCitrate"/>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ClomifeneCitrateStandaloneTreatment -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ClomifeneCitrateStandaloneTreatment">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvarianStimulation"/>
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OverBMIPersonTreatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Complication_after_delivery -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Complication_after_delivery">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Secondary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ContinuousSexualIntercourse -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ContinuousSexualIntercourse">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvarianStimulation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Contraceptive_Injection -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Contraceptive_Injection">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SexualAndContraceptiveHistory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Date -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Date">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PreviousFertilityTreatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Delivery_Type -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Delivery_Type">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Secondary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Duration -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Duration">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MensuralHistory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#First_Child_Condition -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#First_Child_Condition">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Secondary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#First_Day_of_LMP -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#First_Day_of_LMP">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MensuralHistory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#General_Blood_Pressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#General_Blood_Pressure">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GeneralExamination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Height -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Height">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GeneralExamination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#History_of_Gonorrhea_or_Chlaymydia -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#History_of_Gonorrhea_or_Chlaymydia">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalDisorder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IUD -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IUD">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SexualAndContraceptiveHistory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Infection_Sign -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Infection_Sign"/>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#LabaroscopicTubalSurgery -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#LabaroscopicTubalSurgery">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalSurgery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Lumps -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Lumps"/>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Marital_Status -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Marital_Status">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IntroductionAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Metformin -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Metformin">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OverBMIPersonTreatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Name -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Name">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IntroductionAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#No_Interest_od_sexual_Intercourse -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#No_Interest_od_sexual_Intercourse">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OtherGynaecologicalSymptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvarianStimulateAgents -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvarianStimulateAgents">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvarianStimulation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pain -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pain">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MensuralHistory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pain_Outstanding_with_Period -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pain_Outstanding_with_Period"/>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pain_Start_with_Period -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pain_Start_with_Period"/>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pattern_of_Bleeding -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pattern_of_Bleeding">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MensuralHistory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PelvicExamination -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PelvicExamination">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SpecificExamination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pelvic_Inflammatory_Disease -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pelvic_Inflammatory_Disease">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalDisorder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pills -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pills">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SexualAndContraceptiveHistory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Place -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Place">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IntroductionAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pregnancy_Period -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pregnancy_Period">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Secondary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ProvideHormoneIncreaseTreament -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ProvideHormoneIncreaseTreament">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Group1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pulse -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pulse">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GeneralExamination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Reason -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Reason">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PreviousFertilityTreatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ResistantClomifeneCitrate -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ResistantClomifeneCitrate">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OverBMIPersonTreatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Scar_Tissue -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Scar_Tissue">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalDisorder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Smoking -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Smoking">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#RiskBehaviors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Subfertility_Period -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Subfertility_Period">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Primary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SurgeryForHydrosalpinges -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SurgeryForHydrosalpinges">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalSurgery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Tenderness -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Tenderness"/>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalCatheterisationOrCannulation -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalCatheterisationOrCannulation">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalSurgery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalMicroSurgery -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalMicroSurgery">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalSurgery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Weight -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Weight">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#GeneralExamination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Work -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Work">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IntroductionAssessment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#condoms -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#condoms">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SexualAndContraceptiveHistory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#contraceptive_Implant -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#contraceptive_Implant">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#SexualAndContraceptiveHistory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#pshycological_problem -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#pshycological_problem">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OtherGynaecologicalSymptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#CombinationofCC&amp;Metformin -->
+
+    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#CombinationofCC&amp;Metformin">
+        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OverBMIPersonTreatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#General_Blood_Pressure"/>
+            <rdf:Description rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Height"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#General_Blood_Pressure"/>
+            <rdf:Description rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Weight"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pain"/>
+            <rdf:Description rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pain_Outstanding_with_Period"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pain"/>
+            <rdf:Description rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Pain_Start_with_Period"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

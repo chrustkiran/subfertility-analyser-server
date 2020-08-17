@@ -8,6 +8,7 @@ import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Resource;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
@@ -17,11 +18,15 @@ import java.util.*;
 
 @Service
 public class OWLReaderImpl implements OWLReader {
+
+    @Value("${file.location}")
+    String OWL_FILE;
+
     private ArrayList<OWLObjectDTO> owlObjs = new ArrayList<>();
 
     @Override
     public OntModel parseOWL() {
-        String fileName = Constants.OWL_FILE;
+        String fileName = this.OWL_FILE;
         File owlFile = new File(fileName);
         OntModel model = null;
         try {

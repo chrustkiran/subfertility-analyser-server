@@ -19,7 +19,6 @@ public interface Disease {
     String PRE_HIST_PELVIC = "Previous_Historyof_Pelvic_Inflammatory_Disease";
 
 
-
     String FINDS = "finds";
     String FIND_BY = "findby";
     HashMap<String, String> diseaseMedHistMap = new HashMap<String, String>(){{

@@ -870,7 +870,7 @@
     <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Endometriosis -->
 
     <owl:Class rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Endometriosis">
-        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Fibroids"/>
+        <rdfs:subClassOf rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#UterineProblems"/>
     </owl:Class>
     
 
@@ -1434,14 +1434,6 @@
     
 
 
-    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Blood_Group -->
-
-    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Blood_Group">
-        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#IntroductionAssessment"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ClomifeneCitrate -->
 
     <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ClomifeneCitrate"/>
@@ -1461,14 +1453,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Complication_after_delivery">
         <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Secondary"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#CongenitalAbnormalities -->
-
-    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#CongenitalAbnormalities">
-        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PrematureOverianFailure"/>
     </owl:NamedIndividual>
     
 
@@ -1505,26 +1489,10 @@
     
 
 
-    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Diet -->
-
-    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Diet">
-        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OverBMIPersonLoseWeight"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Duration -->
 
     <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Duration">
         <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#MensuralHistory"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Exercise -->
-
-    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Exercise">
-        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OverBMIPersonLoseWeight"/>
     </owl:NamedIndividual>
     
 
@@ -1591,14 +1559,6 @@
     
 
 
-    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#LowlevelEstrogen -->
-
-    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#LowlevelEstrogen">
-        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Lumps -->
 
     <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Lumps"/>
@@ -1641,14 +1601,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvarianStimulateAgents">
         <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvarianStimulation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvarianStructural_Damage -->
-
-    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OvarianStructural_Damage">
-        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
     </owl:NamedIndividual>
     
 
@@ -1791,14 +1743,6 @@
     
 
 
-    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ToxoPlasmosisInfection -->
-
-    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#ToxoPlasmosisInfection">
-        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Endometriosis"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalCatheterisationOrCannulation -->
 
     <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#TubalCatheterisationOrCannulation">
@@ -1847,42 +1791,10 @@
     
 
 
-    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#lowFSH -->
-
-    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#lowFSH">
-        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#lowLH -->
-
-    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#lowLH">
-        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#HypothalamoPituitaryFailure"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#lowLevelProgestron -->
-
-    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#lowLevelProgestron">
-        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#PolycysticOverianSyndrome"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#pshycological_problem -->
 
     <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#pshycological_problem">
         <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#OtherGynaecologicalSymptoms"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.subfertility.com/ontologies/2020/4/subfertility.owl#unexplainedfactors -->
-
-    <owl:NamedIndividual rdf:about="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#unexplainedfactors">
-        <rdf:type rdf:resource="http://www.subfertility.com/ontologies/2020/4/subfertility.owl#Others"/>
     </owl:NamedIndividual>
     
 

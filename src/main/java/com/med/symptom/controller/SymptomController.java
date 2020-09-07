@@ -37,4 +37,18 @@ public class SymptomController {
     public ArrayList<String> getMedAllMedHistories() {
         return medicalHistory.getAllMedHistories();
     }
+
+    @GetMapping("/get-introduction-assessment")
+    public ArrayList<String> getAllIntroductionAssessment() {
+        return medicalHistory.getAllIntroductionAssessment();
+    }
+    @GetMapping("/get-symptom-analysis")
+    public HashMap<String, Object> getSymptomAnalysis() {
+        return medicalHistory.getSymptomAnalysis();
+    }
+
+    @GetMapping("/get-risk-behaviour")
+    public ArrayList<String> getRiskBehaviour() {
+        return medicalHistory.getRiskBehaviour();
+    }
 }

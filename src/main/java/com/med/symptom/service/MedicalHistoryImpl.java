@@ -98,15 +98,13 @@ public class MedicalHistoryImpl extends SymptomService implements MedicalHistory
                             if (SYMPTOM_ANALYSIS.equals(history)) {
                                 owlReader.getAllSubclasses(history).forEach(s -> {
                                     ArrayList<String> subclasses = owlReader.getAllSubclasses(s);
-                                    ArrayList<HashMap<String, List<String>>> subClassesHashMapList = new ArrayList<>();
+                                    HashMap<String, List<String>> symptomsWithSubclasses = new HashMap<>();
                                     if (!subclasses.isEmpty()) {
                                         subclasses.forEach(subclass1 -> {
                                             ArrayList<String> instances = owlReader.getAllIndividualByType(subclass1);
-                                            HashMap<String, List<String>> symptomsWithSubclasses = new HashMap<>();
                                             symptomsWithSubclasses.put(subclass1, instances);
-                                            subClassesHashMapList.add(symptomsWithSubclasses);
                                         });
-                                        allSymptoms.put(s, subClassesHashMapList);
+                                        allSymptoms.put(s, symptomsWithSubclasses);
                                     } else {
                                         allSymptoms.put(s, owlReader.getAllIndividualByType(s));
                                     }
